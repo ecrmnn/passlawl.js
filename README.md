@@ -14,7 +14,7 @@ npm install passlawl.js --save
 ### Usage
 Generate random 4 word password in english (default)
 ```javascript
-const passlawl = require('passlawl');
+const passlawl = require('passlawl.js');
 
 console.log(passlawl.get());
 //=> AbsorbingBreathNeverSang
@@ -22,7 +22,7 @@ console.log(passlawl.get());
 
 Genereate random 4 word password in norwegian (using locale)
 ```javascript
-const passlawl = require('passlawl');
+const passlawl = require('passlawl.js');
 
 console.log(passlawl.locale('no').get());
 //=> KongeSavnetSelvopptattEtterspørsel
