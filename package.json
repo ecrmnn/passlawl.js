@@ -1,6 +1,6 @@
 {
   "name": "passlawl.js",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Generate weird random passwords",
   "main": "src/index.js",
   "scripts": {

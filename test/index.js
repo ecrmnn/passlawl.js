@@ -3,6 +3,7 @@
 const chai = require('chai');
 const expect = require('chai').expect;
 const passlawl = require('../src');
+const fs = require('fs');
 
 describe('Passlawl.js test', function () {
   it('responds to get()', function () {
@@ -39,4 +40,11 @@ describe('Passlawl.js test', function () {
     passlawl.locale('no');
     expect(passlawl.getLocale()).to.equal('no');
   });
+
+  it('can return available locales', function () {
+    const localeDirectories = fs.readdirSync(__dirname + '/../src/locale');
+
+    expect(passlawl.getAvailableLocales()).to.be.an('array');
+    expect(passlawl.getAvailableLocales()).to.eql(localeDirectories);
+  })
 });

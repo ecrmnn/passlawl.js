@@ -28,6 +28,14 @@ module.exports = function () {
     },
 
     /**
+     * Returns all available locales as array
+     * @returns {array|object}
+     */
+    getAvailableLocales() {
+      return Object.keys(locales);
+    },
+
+    /**
      * Get random password string
      * @returns {string}
      */
